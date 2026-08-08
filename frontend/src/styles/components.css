@@ -1,0 +1,139 @@
+/* ==========================
+   Cards
+========================== */
+
+.card{
+
+background:rgb(var(--color-panel-rgb));
+
+border:1px solid rgba(var(--color-border-rgb),.08);
+
+border-radius:18px;
+
+box-shadow:0 10px 30px var(--shadow-color);
+
+}
+
+/* ========================== */
+
+.card-glow{
+
+background:linear-gradient(
+180deg,
+rgba(var(--color-primary-rgb),.08),
+rgba(var(--color-panel-rgb),.90)
+);
+
+border:1px solid rgba(var(--color-primary-rgb),.18);
+
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.btn-primary{
+
+background:linear-gradient(
+90deg,
+rgb(var(--color-primary-rgb)),
+rgb(var(--color-primary2-rgb))
+);
+
+color:white;
+
+padding:.75rem 1.3rem;
+
+border:none;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.25s;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 8px 25px rgba(var(--color-primary-rgb),.35);
+
+}
+
+/* ========================== */
+
+.btn-secondary{
+
+background:transparent;
+
+border:1px solid rgba(var(--color-border-rgb),.20);
+
+padding:.75rem 1.3rem;
+
+border-radius:12px;
+
+color:rgb(var(--color-heading-rgb));
+
+}
+
+/* ==========================
+   Input
+========================== */
+
+.input-style{
+
+width:100%;
+
+height:46px;
+
+padding:0 14px;
+
+background:rgba(var(--color-border-rgb),.05);
+
+border:1px solid rgba(var(--color-border-rgb),.15);
+
+border-radius:12px;
+
+color:rgb(var(--color-heading-rgb));
+
+transition:.25s;
+
+}
+
+.input-style:focus{
+
+border-color:rgb(var(--color-primary-rgb));
+
+box-shadow:0 0 0 3px rgba(var(--color-primary-rgb),.20);
+
+}
+
+.input-style::placeholder{
+
+color:rgba(var(--color-heading-rgb),.50);
+
+}
+
+/* ========================== */
+
+.badge{
+
+display:inline-flex;
+
+align-items:center;
+
+padding:4px 12px;
+
+border-radius:999px;
+
+font-size:.8rem;
+
+font-weight:600;
+
+background:rgba(var(--color-primary-rgb),.10);
+
+color:rgb(var(--color-primary-rgb));
+
+}

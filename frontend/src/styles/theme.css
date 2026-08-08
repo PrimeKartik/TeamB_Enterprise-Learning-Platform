@@ -1,0 +1,63 @@
+/* ===================================
+   SKILLSPHERE THEME SYSTEM
+   Supports: Dark Theme & Light Theme
+=================================== */
+
+:root,
+.dark {
+  /* Dark Theme */
+  --color-base-rgb: 15, 7, 27;         /* #0F071B - Main Background */
+  --color-panel-rgb: 26, 16, 43;       /* #1A102B - Secondary Background */
+  --color-panel2-rgb: 34, 21, 55;      /* #221537 - Card Background */
+  --color-navbar-rgb: 20, 10, 34;      /* #140A22 - Navbar Background */
+  --color-sidebar-rgb: 22, 12, 37;     /* #160C25 - Sidebar Background */
+
+  --color-primary-rgb: 124, 58, 237;   /* #7C3AED - Primary Purple */
+  --color-primary2-rgb: 236, 72, 153;  /* #EC4899 - Accent Pink */
+  --color-accent-rgb: 168, 85, 247;    /* #A855F7 - Mid Purple */
+
+  --color-heading-rgb: 255, 255, 255;  /* #FFFFFF - Primary Text */
+  --color-text-rgb: 255, 255, 255;     /* #FFFFFF - Primary Text */
+  --color-muted-rgb: 197, 197, 214;    /* #C5C5D6 - Secondary Text */
+
+  --color-border-rgb: 255, 255, 255;   /* rgba(255, 255, 255, 0.08) */
+  --border-opacity: 0.08;
+  --color-hover-rgb: 42, 23, 64;       /* #2A1740 - Hover Background */
+
+  --shadow-color: rgba(0, 0, 0, 0.50);
+  --icon-color: #A855F7;
+  --chart-grid: rgba(255, 255, 255, 0.08);
+  --chart-text: rgba(255, 255, 255, 0.7);
+  --chart-tooltip-bg: #1A102B;
+  --chart-tooltip-border: rgba(255, 255, 255, 0.15);
+  --chart-tooltip-text: #FFFFFF;
+}
+
+.light {
+  /* Light Theme */
+  --color-base-rgb: 248, 249, 252;     /* #F8F9FC - Main Background */
+  --color-panel-rgb: 244, 244, 247;    /* #F4F4F7 - Secondary Background */
+  --color-panel2-rgb: 255, 255, 255;   /* #FFFFFF - Card Background */
+  --color-navbar-rgb: 255, 255, 255;   /* #FFFFFF - Navbar Background */
+  --color-sidebar-rgb: 244, 244, 247;  /* #F4F4F7 - Sidebar Background */
+
+  --color-primary-rgb: 124, 58, 237;   /* #7C3AED - Primary Purple */
+  --color-primary2-rgb: 236, 72, 153;  /* #EC4899 - Accent Pink */
+  --color-accent-rgb: 124, 58, 237;    /* #7C3AED - Purple */
+
+  --color-heading-rgb: 31, 41, 55;     /* #1F2937 - Primary Text */
+  --color-text-rgb: 31, 41, 55;        /* #1F2937 - Primary Text */
+  --color-muted-rgb: 107, 114, 128;    /* #6B7280 - Secondary Text */
+
+  --color-border-rgb: 229, 231, 235;   /* #E5E7EB - Border */
+  --border-opacity: 1.0;
+  --color-hover-rgb: 243, 244, 246;    /* #F3F4F6 - Hover Background */
+
+  --shadow-color: rgba(0, 0, 0, 0.06);
+  --icon-color: #7C3AED;
+  --chart-grid: #E5E7EB;
+  --chart-text: #6B7280;
+  --chart-tooltip-bg: #FFFFFF;
+  --chart-tooltip-border: #E5E7EB;
+  --chart-tooltip-text: #1F2937;
+}

@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@import "./styles/theme.css";
+@import "./styles/globals.css";
+@import "./styles/components.css";
+@import "./styles/animations.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(168, 85, 247, 0.35);
+  color: white;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-base-rgb));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-primary-rgb));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-primary2-rgb));
+}
+
+/* Fix: dark mode made typed text in most form fields invisible. */
+.dark input,
+.dark textarea,
+.dark select {
+  color: #FFFFFF !important;
+  background-color: #221537 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #C5C5D6 !important;
+}
+
+.light input,
+.light textarea,
+.light select {
+  color: #1F2937 !important;
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #9CA3AF !important;
+}
+
+/* Global Dark Theme Fallback Overrides for Light Classes */
+.dark .bg-white,
+.dark .bg-gray-50,
+.dark .bg-gray-100,
+.dark .bg-slate-50,
+.dark .bg-slate-100,
+.dark .bg-neutral-50,
+.dark .bg-neutral-100 {
+  background-color: #221537 !important;
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark .text-gray-900,
+.dark .text-gray-800,
+.dark .text-gray-700,
+.dark .text-slate-900,
+.dark .text-slate-800,
+.dark .text-black {
+  color: #FFFFFF !important;
+}
+
+.dark .text-gray-600,
+.dark .text-gray-500,
+.dark .text-gray-400,
+.dark .text-slate-600,
+.dark .text-slate-500,
+.dark .text-slate-400 {
+  color: #C5C5D6 !important;
+}
+
+.dark .border-gray-100,
+.dark .border-gray-200,
+.dark .border-gray-300,
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-slate-300 {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+
+/* Certificate & Resume download — A4 Portrait 1-Page Specification */
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+/* Force pristine light paper canvas and crisp text for certificate & resume preview under dark mode */
+#certificate-print-area,
+.dark #certificate-print-area,
+#printable-resume,
+.dark #printable-resume {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+.dark #certificate-print-area .text-slate-900,
+.dark #certificate-print-area .text-black,
+.dark #certificate-print-area [data-cert-val],
+.dark #printable-resume .text-gray-900,
+.dark #printable-resume h1,
+.dark #printable-resume h2,
+.dark #printable-resume h3,
+.dark #printable-resume h4,
+.dark #printable-resume strong {
+  color: #0F172A !important;
+}
+
+.dark #certificate-print-area .text-slate-500,
+.dark #certificate-print-area .text-slate-700,
+.dark #certificate-print-area [data-cert-label],
+.dark #printable-resume .text-gray-700,
+.dark #printable-resume .text-gray-600,
+.dark #printable-resume .text-gray-500,
+.dark #printable-resume p,
+.dark #printable-resume span,
+.dark #printable-resume li {
+  color: #334155 !important;
+}
+
+.dark #printable-resume .text-purple-700 {
+  color: #6D28D9 !important;
+}
+
+.dark #printable-resume .border-gray-200,
+.dark #printable-resume .border-gray-300,
+.dark #printable-resume .border-gray-400 {
+  border-color: #E2E8F0 !important;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  html,
+  body {
+    width: 210mm !important;
+    height: 297mm !important;
+    max-height: 297mm !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    padding: 0 !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .certificate-container,
+  .certificate-container *,
+  #certificate-print-area,
+  #certificate-print-area *,
+  #printable-resume,
+  #printable-resume * {
+    visibility: visible !important;
+  }
+
+  .certificate-container,
+  #certificate-print-area {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    margin: 0 auto !important;
+    padding: 10mm !important;
+    box-sizing: border-box !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-after: avoid !important;
+    overflow: hidden !important;
+    background-color: #FFFFFF !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  #printable-resume {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    max-height: 297mm !important;
+    margin: 0 auto !important;
+    padding: 8mm 12mm !important;
+    box-sizing: border-box !important;
+    page-break-inside: avoid !important;
+    page-break-before: avoid !important;
+    page-break-after: avoid !important;
+    break-inside: avoid !important;
+    overflow: hidden !important;
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .no-print,
+  .no-print * {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .dark #certificate-print-area,
+  .dark .certificate-container,
+  #certificate-print-area,
+  .certificate-container,
+  #printable-resume,
+  .dark #printable-resume {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+  }
+}
+
+/* =========================================================================
+   LIGHT MODE OVERRIDES FOR HARDCODED DARK THEME CLASSES
+   This forces components built with dark-mode colors to display properly
+   in light mode.
+   ========================================================================= */
+
+/* Backgrounds */
+.light .bg-\[\#180E2B\],
+.light .bg-\[\#1F1235\],
+.light .bg-\[\#0B0514\],
+.light .bg-gray-900,
+.light .bg-slate-900 {
+  background-color: #FFFFFF !important;
+}
+
+.light .bg-black\/30,
+.light .bg-black\/40,
+.light .bg-black\/60,
+.light .bg-black\/80,
+.light .bg-black\/85,
+.light .bg-purple-900\/30,
+.light .bg-purple-900\/40,
+.light .bg-purple-950,
+.light .bg-purple-950\/60,
+.light .bg-slate-800,
+.light .bg-gray-800 {
+  background-color: #F3F4F6 !important; /* light gray for cards/panels */
+}
+
+/* Typography */
+.light .text-white,
+.light .text-gray-100,
+.light .text-slate-100 {
+  color: #111827 !important; /* dark gray text */
+}
+
+.light .text-purple-200,
+.light .text-purple-200\/70,
+.light .text-purple-200\/80,
+.light .text-purple-300,
+.light .text-purple-300\/50,
+.light .text-purple-300\/70,
+.light .text-gray-300,
+.light .text-gray-400,
+.light .text-slate-300,
+.light .text-slate-400 {
+  color: #4B5563 !important; /* medium gray text */
+}
+
+.light .text-purple-400 {
+  color: #6B7280 !important;
+}
+
+/* Borders */
+.light .border-purple-500\/10,
+.light .border-purple-500\/15,
+.light .border-purple-500\/20,
+.light .border-purple-500\/25,
+.light .border-purple-500\/30,
+.light .border-purple-500\/40,
+.light .border-purple-700\/40,
+.light .border-purple-800\/40,
+.light .border-gray-700,
+.light .border-gray-800,
+.light .border-slate-700,
+.light .border-slate-800,
+.light .border-white\/10,
+.light .border-white\/20 {
+  border-color: #E5E7EB !important; /* light gray border */
+}
+
+/* Hover States */
+.light .hover\:bg-purple-900\/30:hover,
+.light .hover\:bg-purple-900\/40:hover,
+.light .hover\:bg-black\/30:hover {
+  background-color: #E5E7EB !important;
+}
+
+.light .hover\:border-purple-500\/40:hover,
+.light .hover\:border-purple-500\/50:hover {
+  border-color: #D1D5DB !important;
+}
+
+/* Recharts (Graphs) SVG specific overrides for Light Mode */
+.light .recharts-text,
+.light .recharts-cartesian-axis-tick-value,
+.light .recharts-legend-item-text {
+  fill: #4B5563 !important;
+}
+.light .recharts-cartesian-grid-horizontal line,
+.light .recharts-cartesian-grid-vertical line {
+  stroke: #E5E7EB !important;
+}
+.light .recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+  color: #111827 !important;
+}
+.light .recharts-tooltip-item {
+  color: #111827 !important;
+}

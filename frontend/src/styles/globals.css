@@ -1,0 +1,83 @@
+html,
+body {
+  background: rgb(var(--color-base-rgb));
+  color: rgb(var(--color-text-rgb));
+
+  transition: .25s;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ============================== */
+
+.text-heading {
+  color: rgb(var(--color-heading-rgb));
+}
+
+.text-body {
+  color: rgb(var(--color-text-rgb));
+}
+
+.text-muted {
+  color: rgb(var(--color-muted-rgb));
+}
+
+/* ============================== */
+
+.bg-base {
+  background: rgb(var(--color-base-rgb));
+}
+
+.bg-panel {
+  background: rgb(var(--color-panel-rgb));
+}
+
+.bg-panel2 {
+  background: rgb(var(--color-panel2-rgb));
+}
+
+/* ============================== */
+
+.border-soft {
+  border:1px solid rgba(var(--color-border-rgb),.10);
+}
+
+.border-soft-20 {
+  border:1px solid rgba(var(--color-border-rgb),.20);
+}
+
+/* ============================== */
+
+.gradient-text{
+
+background:linear-gradient(
+90deg,
+rgb(var(--color-primary-rgb)),
+rgb(var(--color-primary2-rgb))
+);
+
+-webkit-background-clip:text;
+color:transparent;
+
+}
+
+/* ============================== */
+
+.glass{
+
+backdrop-filter:blur(18px);
+
+background:rgba(var(--color-panel-rgb),.65);
+
+border:1px solid rgba(var(--color-border-rgb),.10);
+
+}
