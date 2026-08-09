@@ -68,16 +68,37 @@ export default function ContinueLearning({ enrollments = [] }) {
           </Link>
         </div>
 
-        <div className="flex items-center justify-center">
-          <div className="w-36 h-36 rounded-full border-8 border-primary/20 flex items-center justify-center">
-            <div className="text-center">
-              <p className="text-4xl font-bold text-heading">
-                {currentCourse.progress}%
-              </p>
-              <p className="text-xs text-muted mt-1">
-                Completed
-              </p>
-            </div>
+        <div className="flex items-center justify-center relative w-36 h-36">
+          <svg className="w-full h-full transform -rotate-90">
+            <circle
+              className="text-primary/20"
+              strokeWidth="8"
+              stroke="currentColor"
+              fill="transparent"
+              r="60"
+              cx="72"
+              cy="72"
+            />
+            <circle
+              className="text-primary transition-all duration-1000 ease-in-out"
+              strokeWidth="8"
+              strokeDasharray={377}
+              strokeDashoffset={377 - (377 * currentCourse.progress) / 100}
+              strokeLinecap="round"
+              stroke="currentColor"
+              fill="transparent"
+              r="60"
+              cx="72"
+              cy="72"
+            />
+          </svg>
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+            <p className="text-4xl font-bold text-heading">
+              {currentCourse.progress}%
+            </p>
+            <p className="text-xs text-muted mt-1">
+              Completed
+            </p>
           </div>
         </div>
       </div>

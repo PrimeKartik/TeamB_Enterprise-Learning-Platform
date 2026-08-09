@@ -155,30 +155,16 @@ export default function CourseDetail() {
         </button>
       </div>
 
-      {/* Hero Banner with Preview Overlay */}
-      <div className="overflow-hidden rounded-3xl bg-[#201233] border border-white/10 shadow-xl text-white">
-        <div className="relative h-80 w-full overflow-hidden group">
-          <img
-            src={course.imageUrl || '/images/full-stack-development.svg'}
-            alt={course.title}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            onError={(e) => {
-              e.target.onerror = null
-              e.target.src = '/images/full-stack-development.svg'
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#201233] via-black/40 to-transparent flex items-center justify-center">
-            <button
-              onClick={() => setShowPreviewModal(true)}
-              className="flex items-center gap-3 px-6 py-3 rounded-2xl bg-gradient-to-r from-[#7C3AED] to-[#EC4899] text-white font-bold text-sm shadow-2xl hover:scale-105 transition-all cursor-pointer"
-            >
-              <Play size={20} className="fill-white" />
-              Watch Course Preview Video
-            </button>
-          </div>
+      {/* New Hero Banner (Split Layout) */}
+      <div className="relative overflow-hidden rounded-3xl bg-[#201233] border border-white/10 shadow-xl p-8 lg:p-12 text-white flex flex-col-reverse lg:flex-row gap-12 items-center">
+        {/* Background Gradients */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+          <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] bg-[#7C3AED]/20 blur-[100px] rounded-full"></div>
+          <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[50%] bg-[#EC4899]/10 blur-[100px] rounded-full"></div>
         </div>
 
-        <div className="space-y-6 p-8">
+        {/* Left Content */}
+        <div className="flex-1 space-y-6 z-10 w-full">
           <div className="flex flex-wrap items-center gap-3">
             {course.badge && (
               <span
@@ -194,53 +180,69 @@ export default function CourseDetail() {
             </span>
           </div>
 
-          <h1 className="text-4xl font-extrabold text-white">{course.title}</h1>
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-white leading-tight">{course.title}</h1>
 
           <p className="text-lg leading-relaxed text-[#B8B8C7]">{course.description}</p>
 
+          {/* Stats */}
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4 pt-4">
+            <div className="flex items-center gap-2">
+              <Star className="fill-yellow-400 text-yellow-400" size={20} />
+              <span className="font-semibold text-white">{course.rating}</span>
+              <span className="text-sm text-[#B8B8C7]">({course.reviews} reviews)</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Clock className="text-[#EC4899]" size={20} />
+              <span className="font-semibold text-white">{course.duration}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Award className="text-[#7C3AED]" size={20} />
+              <span className="font-semibold text-white">{course.level}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <BookOpen className="text-blue-400" size={20} />
+              <span className="font-semibold text-white">{course.totalLessons} Lessons</span>
+            </div>
+          </div>
+          
           {/* Course Tags */}
           <div className="flex flex-wrap gap-2 pt-2">
             {['React', 'Web Dev', 'Full Stack', 'JavaScript', 'Spring Boot'].map((tag, idx) => (
-              <span key={idx} className="px-3 py-1 rounded-lg bg-[#1A1028] border border-white/10 text-xs font-medium text-purple-300">
+              <span key={idx} className="px-3 py-1 rounded-lg bg-black/30 border border-white/5 text-xs font-medium text-purple-200">
                 #{tag}
               </span>
             ))}
           </div>
+        </div>
 
-          {/* Stats */}
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 pt-2">
-            <div className="flex items-center gap-3">
-              <Star className="fill-yellow-400 text-yellow-400" size={22} />
-              <div>
-                <p className="font-semibold text-white">{course.rating}</p>
-                <p className="text-sm text-[#B8B8C7]">{course.reviews} reviews</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <Clock className="text-[#EC4899]" size={22} />
-              <div>
-                <p className="font-semibold text-white">{course.duration}</p>
-                <p className="text-sm text-[#B8B8C7]">Estimated Time</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <BookOpen className="text-[#7C3AED]" size={22} />
-              <div>
-                <p className="font-semibold text-white">{course.totalLessons} Lessons</p>
-                <p className="text-sm text-[#B8B8C7]">5 Modules</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <Award className="text-[#EC4899]" size={22} />
-              <div>
-                <p className="font-semibold text-white">{course.level}</p>
-                <p className="text-sm text-[#B8B8C7]">Difficulty Level</p>
-              </div>
+        {/* Right Image/Video Preview */}
+        <div className="w-full lg:w-[420px] xl:w-[480px] shrink-0 z-10 relative">
+          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 group bg-[#1A1028]">
+            <img
+              src={course.imageUrl || '/images/full-stack-development.svg'}
+              alt={course.title}
+              className="w-full h-full object-cover opacity-70 group-hover:scale-105 group-hover:opacity-60 transition-all duration-500"
+              onError={(e) => {
+                e.target.onerror = null
+                e.target.src = '/images/full-stack-development.svg'
+              }}
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <button
+                onClick={() => setShowPreviewModal(true)}
+                className="flex flex-col items-center gap-3 hover:scale-110 transition-transform cursor-pointer"
+              >
+                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#EC4899] text-white shadow-[0_0_30px_rgba(236,72,153,0.5)]">
+                  <Play size={24} className="fill-white translate-x-0.5" />
+                </div>
+                <span className="text-sm font-bold text-white tracking-wide shadow-black drop-shadow-md">Watch Preview</span>
+              </button>
             </div>
           </div>
+          
+          {/* Decorative floating elements around the video */}
+          <div className="absolute -top-4 -right-4 bg-[#7C3AED] w-20 h-20 rounded-full blur-[40px] -z-10"></div>
+          <div className="absolute -bottom-4 -left-4 bg-[#EC4899] w-20 h-20 rounded-full blur-[40px] -z-10"></div>
         </div>
       </div>
 
