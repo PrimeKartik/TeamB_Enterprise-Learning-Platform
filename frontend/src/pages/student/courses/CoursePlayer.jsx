@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { CheckCircle2, ChevronLeft, ChevronRight, Loader2 } from 'lucide-react'
 
 import { courseApi } from '../../../api/courseApi'
@@ -18,6 +18,7 @@ import CertificateSuccessModal from '../certificates/components/CertificateSucce
 export default function CoursePlayer() {
 
     const { id } = useParams()
+    const navigate = useNavigate()
     const { user } = useAuthContext()
 
     const [course, setCourse] = useState(null)
@@ -180,6 +181,12 @@ export default function CoursePlayer() {
 
     return (
         <div className="space-y-6">
+            <button
+                onClick={() => navigate('/dashboard/learning')}
+                className="flex items-center gap-2 text-sm font-semibold text-purple-300 hover:text-white transition-colors w-fit"
+            >
+                <ChevronLeft size={16} /> Back to My Learning
+            </button>
 
             <ProgressHeader
                 title={course.title}
