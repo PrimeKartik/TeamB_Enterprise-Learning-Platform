@@ -1,15 +1,15 @@
 import api from '../api/client';
 
 const MOCK_REVENUE_DATA = {
-  totalRevenue: 44998.0,
-  monthlyRevenue: 44998.0,
-  todaysRevenue: 44998.0,
-  thisWeekRevenue: 44998.0,
-  thisYearRevenue: 44998.0,
-  totalPaidEnrollments: 2,
+  totalRevenue: 0.0,
+  monthlyRevenue: 0.0,
+  todaysRevenue: 0.0,
+  thisWeekRevenue: 0.0,
+  thisYearRevenue: 0.0,
+  totalPaidEnrollments: 0,
   freeCourseEnrollments: 0,
-  avgRevenuePerStudent: 44998.0,
-  revenueGrowthPct: 100.0,
+  avgRevenuePerStudent: 0.0,
+  revenueGrowthPct: 0.0,
   pendingPayments: 0.0,
   refundedAmount: 0.0,
 
@@ -77,8 +77,10 @@ export const revenueService = {
     try {
       const res = await api.get('/admin/revenue/analytics', { params: { timeframe } });
       if (res.data) return res.data;
+      console.warn("No data from API, using MOCK_REVENUE_DATA");
       return MOCK_REVENUE_DATA;
     } catch (e) {
+      console.error("Error fetching revenue analytics:", e);
       return MOCK_REVENUE_DATA;
     }
   },

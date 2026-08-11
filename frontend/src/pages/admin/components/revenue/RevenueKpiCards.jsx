@@ -13,12 +13,12 @@ import {
 } from 'lucide-react';
 
 export default function RevenueKpiCards({ data }) {
-  const cleanTotal = (data?.totalRevenue && data.totalRevenue > 20000 && data.totalRevenue < 100000) ? data.totalRevenue : 44998;
-  const cleanToday = cleanTotal;
-  const cleanWeek = cleanTotal;
-  const cleanMonth = cleanTotal;
-  const cleanAvg = cleanTotal;
-  const cleanPaidEnrollments = (data?.totalPaidEnrollments && data.totalPaidEnrollments < 10) ? data.totalPaidEnrollments : 2;
+  const cleanTotal = data?.totalRevenue ?? 0;
+  const cleanToday = data?.todaysRevenue ?? 0;
+  const cleanWeek = data?.thisWeekRevenue ?? 0;
+  const cleanMonth = data?.monthlyRevenue ?? 0;
+  const cleanAvg = data?.avgRevenuePerStudent ?? 0;
+  const cleanPaidEnrollments = data?.totalPaidEnrollments ?? 0;
 
   const formatCurrency = (num) => `₹${Number(num).toLocaleString('en-IN')}`;
 

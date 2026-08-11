@@ -52,9 +52,8 @@ public class RevenueAnalyticsService {
                 .filter(e -> e.getCourse() != null && e.getCourse().getPrice() != null && e.getCourse().getPrice() > 0)
                 .count();
 
-        // If DB has enrollments, use exact sum, otherwise default to 2 paid enrollments (₹44,998: ₹29,999 + ₹14,999)
-        double totalRevenue = totalRevFromEnrollments > 0 ? totalRevFromEnrollments : 44998.0;
-        int finalPaidCount = paidEnrollments > 0 ? paidEnrollments : 2;
+        double totalRevenue = totalRevFromEnrollments;
+        int finalPaidCount = paidEnrollments;
 
         int freeEnrollments = (int) allEnrollments.stream()
                 .filter(e -> e.getCourse() == null || e.getCourse().getPrice() == null || e.getCourse().getPrice() == 0.0)
@@ -90,19 +89,16 @@ public class RevenueAnalyticsService {
                 .filter(e -> e.getEnrolledAt() != null && e.getEnrolledAt().toLocalDate().equals(today) && e.getCourse() != null && e.getCourse().getPrice() > 0)
                 .mapToDouble(e -> e.getCourse().getPrice())
                 .sum();
-        if (todaysRev == 0) todaysRev = totalRevenue;
 
         double thisWeekRev = allEnrollments.stream()
                 .filter(e -> e.getEnrolledAt() != null && e.getEnrolledAt().isAfter(weekAgo) && e.getCourse() != null && e.getCourse().getPrice() > 0)
                 .mapToDouble(e -> e.getCourse().getPrice())
                 .sum();
-        if (thisWeekRev == 0) thisWeekRev = totalRevenue;
 
         double monthlyRev = allEnrollments.stream()
                 .filter(e -> e.getEnrolledAt() != null && YearMonth.from(e.getEnrolledAt()).equals(currentMonth) && e.getCourse() != null && e.getCourse().getPrice() > 0)
                 .mapToDouble(e -> e.getCourse().getPrice())
                 .sum();
-        if (monthlyRev == 0) monthlyRev = totalRevenue;
 
         dto.setTotalRevenue(Math.round(totalRevenue * 100.0) / 100.0);
         dto.setMonthlyRevenue(Math.round(monthlyRev * 100.0) / 100.0);
