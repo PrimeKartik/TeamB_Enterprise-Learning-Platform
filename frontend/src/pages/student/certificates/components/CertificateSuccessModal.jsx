@@ -80,7 +80,7 @@ export default function CertificateSuccessModal({ isOpen, onClose, certificate, 
       tempDiv.innerHTML = `
         <div style="width: 794px; min-height: 1060px; background: #FFFFFF; color: #0F172A; font-family: sans-serif; padding: 20px; border: 6px solid #D4AF37; box-sizing: border-box;">
           <div style="border: 1px solid #D4AF37; padding: 40px; text-align: center; background: #FAFBFD;">
-            <h1 style="color: #7C3AED; font-size: 28px; font-weight: 900; letter-spacing: 2px;">SKILLSPHERE LEARNING NEXUS</h1>
+            <h1 style="color: #7C3AED; font-size: 28px; font-weight: 900; letter-spacing: 2px;">ENTERPRISE LEARNING PLATFORM</h1>
             <h2 style="font-size: 24px; font-weight: 800; margin-top: 20px; color: #0F172A;">CERTIFICATE OF COMPLETION</h2>
             <p style="color: #64748B; font-size: 11px; letter-spacing: 2px; text-transform: uppercase;">This certificate is proudly presented to</p>
             <h1 style="color: #7C3AED; font-size: 40px; font-weight: 900; margin: 15px 0;">${studentName}</h1>
@@ -120,7 +120,7 @@ export default function CertificateSuccessModal({ isOpen, onClose, certificate, 
       try {
         await navigator.share({
           title: `My Certificate - ${courseName}`,
-          text: `I just earned my official certificate for ${courseName} on SkillSphere!`,
+          text: `I just earned my official certificate for ${courseName} on Enterprise learning platform!`,
           url: fullVerifyUrl
         })
       } catch (err) {
@@ -218,7 +218,7 @@ export default function CertificateSuccessModal({ isOpen, onClose, certificate, 
               </button>
 
               <a
-                href={`https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent(courseName)}&organizationName=SkillSphere+Learning+Nexus&issueYear=2026&issueMonth=8&certUrl=${encodeURIComponent(fullVerifyUrl)}&certId=${encodeURIComponent(certId)}`}
+                href={`https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent(courseName)}&organizationName=Enterprise learning platform+Learning+Nexus&issueYear=2026&issueMonth=8&certUrl=${encodeURIComponent(fullVerifyUrl)}&certId=${encodeURIComponent(certId)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-indigo-600 hover:opacity-90 text-white font-bold text-xs flex items-center justify-center gap-2 transition cursor-pointer"

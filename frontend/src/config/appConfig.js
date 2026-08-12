@@ -1,5 +1,5 @@
 export const appConfig = {
-  appName: "SkillSphere Learning Nexus",
+  appName: "Enterprise learning platform",
 
   version: "1.0.0",
 

@@ -90,7 +90,7 @@ export default function LessonContent({ lesson, courseId }) {
                 </head>
                 <body>
                     <h1>${lesson.title}</h1>
-                    <div class="meta">SkillSphere Learning Nexus | Lesson Duration: ${lesson.duration || 'N/A'}</div>
+                    <div class="meta">Enterprise learning platform | Lesson Duration: ${lesson.duration || 'N/A'}</div>
                     <div class="content">
                         <h3>Lesson Overview</h3>
                         <p>${lesson.description || 'No detailed description available.'}</p>

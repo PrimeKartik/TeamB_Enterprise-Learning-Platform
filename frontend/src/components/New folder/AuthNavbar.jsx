@@ -14,7 +14,7 @@ export default function AuthNavbar() {
 
           <div>
             <p className="text-heading font-bold text-sm">
-              SkillSphere
+              Enterprise learning platform
             </p>
             <p className="text-muted text-[10px]">
               Learning Nexus

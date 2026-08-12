@@ -160,7 +160,7 @@ export default function ResumeBuilder() {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>${personal?.fullName || 'Resume'} - SkillSphere ATS Resume</title>
+          <title>${personal?.fullName || 'Resume'} - Enterprise learning platform ATS Resume</title>
           <style>
             @page {
               size: A4 portrait;
@@ -880,7 +880,7 @@ export default function ResumeBuilder() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
                       <label className="text-[11px] font-bold text-muted block mb-1 uppercase">Project Name</label>
-                      <input type="text" value={proj.name} onChange={(e) => updateProject(proj.id, 'name', e.target.value)} placeholder="SkillSphere LMS Platform" className="w-full px-3 py-2 rounded-xl bg-panel border border-soft text-xs text-heading" />
+                      <input type="text" value={proj.name} onChange={(e) => updateProject(proj.id, 'name', e.target.value)} placeholder="Enterprise learning platform LMS Platform" className="w-full px-3 py-2 rounded-xl bg-panel border border-soft text-xs text-heading" />
                     </div>
                     <div>
                       <label className="text-[11px] font-bold text-muted block mb-1 uppercase">Tech Stack</label>

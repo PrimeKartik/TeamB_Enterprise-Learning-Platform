@@ -5,7 +5,7 @@ import Reveal from '../Reveal'
 const faqs = [
   {
     q: 'Do I get a certificate after finishing a course?',
-    a: 'Yes. Every course on SkillSphere includes a completion certificate you can add to your resume or LinkedIn profile.',
+    a: 'Yes. Every course on Enterprise learning platform includes a completion certificate you can add to your resume or LinkedIn profile.',
   },
   {
     q: 'Can I learn at my own pace?',

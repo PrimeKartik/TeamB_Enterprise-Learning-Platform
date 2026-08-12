@@ -12,7 +12,7 @@ export default function EmptyDashboard() {
       </div>
 
       <h2 className="mt-6 text-heading text-3xl font-bold">
-        Welcome to SkillSphere!
+        Welcome to Enterprise learning platform!
       </h2>
 
       <p className="mt-3 text-muted max-w-xl mx-auto">

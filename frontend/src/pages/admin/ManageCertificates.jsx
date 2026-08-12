@@ -210,7 +210,7 @@ export default function ManageCertificates() {
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
-    link.setAttribute("download", `SkillSphere_Certificates_${new Date().toISOString().slice(0, 10)}.csv`);
+    link.setAttribute("download", `Enterprise learning platform_Certificates_${new Date().toISOString().slice(0, 10)}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -226,7 +226,7 @@ export default function ManageCertificates() {
     const doc = new jsPDF('p', 'mm', 'a4');
     doc.setFont("helvetica", "bold");
     doc.setFontSize(16);
-    doc.text("SkillSphere Learning Nexus - Certificates Master Report", 14, 18);
+    doc.text("Enterprise learning platform - Certificates Master Report", 14, 18);
     doc.setFontSize(9);
     doc.setFont("helvetica", "normal");
     doc.text(`Generated on: ${new Date().toLocaleString()} | Total Records: ${filteredCertificates.length}`, 14, 25);
@@ -259,7 +259,7 @@ export default function ManageCertificates() {
       y += 7;
     });
 
-    doc.save(`SkillSphere_Certificates_Report_${new Date().toISOString().slice(0, 10)}.pdf`);
+    doc.save(`Enterprise learning platform_Certificates_Report_${new Date().toISOString().slice(0, 10)}.pdf`);
     toast.success("Certificates master report exported as PDF!");
   };
 
@@ -299,7 +299,7 @@ export default function ManageCertificates() {
             Manage Student Certificates
           </h1>
           <p className="text-xs sm:text-sm text-purple-200/80 mt-1">
-            Issue, view, filter, and manage official SkillSphere accomplishment credentials.
+            Issue, view, filter, and manage official Enterprise learning platform accomplishment credentials.
           </p>
         </div>
 

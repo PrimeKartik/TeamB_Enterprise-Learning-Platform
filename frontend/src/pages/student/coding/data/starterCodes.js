@@ -96,7 +96,7 @@ ORDER BY e.salary DESC;`,
 </head>
 <body>
     <div class="card">
-        <h1>SkillSphere Web Practice</h1>
+        <h1>Enterprise learning platform Web Practice</h1>
         <p>Edit HTML & CSS to build dynamic UI components.</p>
     </div>
 </body>

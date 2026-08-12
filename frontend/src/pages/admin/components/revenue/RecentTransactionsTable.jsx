@@ -30,7 +30,7 @@ export default function RecentTransactionsTable({ transactions = [] }) {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `SkillSphere_Transactions_${Date.now()}.csv`;
+    a.download = `Enterprise learning platform_Transactions_${Date.now()}.csv`;
     a.click();
     toast.success("Transactions CSV exported successfully!");
   };

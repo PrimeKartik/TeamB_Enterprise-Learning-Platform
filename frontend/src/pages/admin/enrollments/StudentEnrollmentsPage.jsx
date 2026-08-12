@@ -107,7 +107,7 @@ export default function StudentEnrollmentsPage() {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `SkillSphere_Student_Enrollments_${Date.now()}.csv`;
+    a.download = `Enterprise learning platform_Student_Enrollments_${Date.now()}.csv`;
     a.click();
     toast.success('Student Enrollments CSV exported!');
   };

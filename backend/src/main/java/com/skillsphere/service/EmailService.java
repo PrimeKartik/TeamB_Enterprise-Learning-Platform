@@ -29,10 +29,10 @@ public class EmailService {
             MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
 
             helper.setTo(to);
-            helper.setSubject("SkillSphere Learning Nexus - Password Reset OTP Code");
+            helper.setSubject("Enterprise learning platform - Password Reset OTP Code");
 
             String htmlContent = "<div style=\"font-family: Arial, sans-serif; max-width: 550px; margin: 0 auto; padding: 25px; border: 1px solid #7C3AED; border-radius: 16px; background-color: #0F071B; color: #FFFFFF;\">"
-                    + "<h2 style=\"color: #EC4899; text-align: center; font-size: 24px;\">SkillSphere Learning Nexus</h2>"
+                    + "<h2 style=\"color: #EC4899; text-align: center; font-size: 24px;\">Enterprise learning platform</h2>"
                     + "<p style=\"color: #E2E8F0;\">Hello,</p>"
                     + "<p style=\"color: #CBD5E1;\">You have requested to reset your password. Use the following 6-digit One-Time Password (OTP) code to complete your verification:</p>"
                     + "<div style=\"text-align: center; margin: 25px 0;\">"

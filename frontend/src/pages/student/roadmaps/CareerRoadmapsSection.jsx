@@ -120,7 +120,7 @@ export default function CareerRoadmapsSection() {
           codingDiff: "Medium",
           hourlySlots: [
             { time: "06:00 PM - 07:00 PM", task: "Architecture & Markup: Code Semantic Profile Structure", type: "Practice", completed: true },
-            { time: "07:00 PM - 08:00 PM", task: "Styling & Submission: Apply Custom CSS Theme & Upload to SkillSphere", type: "Submission", completed: true }
+            { time: "07:00 PM - 08:00 PM", task: "Styling & Submission: Apply Custom CSS Theme & Upload to Enterprise learning platform", type: "Submission", completed: true }
           ]
         },
         { 

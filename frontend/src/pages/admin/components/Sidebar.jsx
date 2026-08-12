@@ -73,7 +73,7 @@ export default function Sidebar() {
             <Shield size={22} />
           </div>
           <div>
-            <h1 className="text-lg font-bold text-heading leading-tight">SkillSphere</h1>
+            <h1 className="text-lg font-bold text-heading leading-tight">Enterprise learning platform</h1>
             <p className="text-[11px] text-muted font-medium">Admin Control Panel</p>
           </div>
         </div>

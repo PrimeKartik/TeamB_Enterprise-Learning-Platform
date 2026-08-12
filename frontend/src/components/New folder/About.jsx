@@ -17,7 +17,7 @@ export default function About() {
             Built by educators. Backed by outcomes.
           </h2>
           <p className="text-muted text-sm leading-relaxed">
-            SkillSphere Learning Nexus was founded to close the gap between what
+            Enterprise learning platform was founded to close the gap between what
             classrooms teach and what the industry actually needs — through
             practical, project-based courses taught by people who've done the job.
           </p>

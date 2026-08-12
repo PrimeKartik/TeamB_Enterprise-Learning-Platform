@@ -54,7 +54,7 @@ export default function AdminContestManager({ onClose, onSaveContest }) {
             <label className="block text-muted font-bold mb-1">Contest Title</label>
             <input
               type="text"
-              placeholder="e.g. SkillSphere Code Wars #2026"
+              placeholder="e.g. Enterprise learning platform Code Wars #2026"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               className="w-full bg-base border border-soft rounded-xl px-3.5 py-2 text-heading outline-none focus:border-purple-500"

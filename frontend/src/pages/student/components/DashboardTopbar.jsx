@@ -51,7 +51,7 @@ export default function DashboardTopbar({ user, onLogout, onOpenSidebar }) {
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-gradient">
             <GraduationCap size={16} className="text-white" />
           </div>
-          <span className="hidden sm:inline text-heading font-bold text-sm">SkillSphere</span>
+          <span className="hidden sm:inline text-heading font-bold text-sm">Enterprise learning platform</span>
         </Link>
       </div>
 

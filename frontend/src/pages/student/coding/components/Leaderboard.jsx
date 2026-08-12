@@ -15,7 +15,7 @@ export default function Leaderboard({ leaderboard = [] }) {
           </div>
           <div>
             <h3 className="text-lg font-bold text-heading">Global Coding Leaderboard</h3>
-            <p className="text-xs text-muted">Compete with SkillSphere peers and climb the practice rankings</p>
+            <p className="text-xs text-muted">Compete with Enterprise learning platform peers and climb the practice rankings</p>
           </div>
         </div>
       </div>

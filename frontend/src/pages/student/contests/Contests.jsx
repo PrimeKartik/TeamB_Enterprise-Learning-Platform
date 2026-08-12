@@ -135,7 +135,7 @@ export default function Contests() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 tracking-tight">
-            SkillSphere Coding Arena
+            Coding Arena
           </h1>
           <p className="text-sm md:text-base text-white/90 mb-6 leading-relaxed max-w-xl">
             Register for live coding tournaments, solve algorithmic challenges in Java, Python, C++, or JS, view real-time leaderboards, and earn verified certificates!

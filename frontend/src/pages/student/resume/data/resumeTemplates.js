@@ -34,7 +34,7 @@ export const DEFAULT_RESUME_DATA = {
   projects: [
     {
       id: "proj1",
-      name: "SkillSphere LMS Platform",
+      name: "Enterprise learning platform LMS Platform",
       description: "Learning management system with course player, quiz engine, and student analytics.",
       technologies: "React, Node.js, Express, MySQL",
       github: "https://github.com/alexrivera/skillsphere-lms",
@@ -55,8 +55,8 @@ export const DEFAULT_RESUME_DATA = {
   certifications: [
     {
       id: "cert1",
-      name: "SkillSphere Full Stack Certified Engineer",
-      issuer: "SkillSphere Nexus",
+      name: "Enterprise learning platform Full Stack Certified Engineer",
+      issuer: "Enterprise learning platform Nexus",
       date: "Jan 2026",
       credentialUrl: "https://skillsphere.edu/verify/cert-1029"
     }

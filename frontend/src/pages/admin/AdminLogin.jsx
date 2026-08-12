@@ -44,7 +44,7 @@ export default function AdminLogin() {
           </div>
           <div>
             <h1 className="text-2xl font-bold text-heading">Admin Portal</h1>
-            <p className="text-xs text-muted">SkillSphere System Administration</p>
+            <p className="text-xs text-muted">Enterprise learning platform System Administration</p>
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export default function AdminLogin() {
       </div>
 
       <p className="text-xs text-muted mt-6 text-center">
-        SkillSphere Security Protocol · Direct Admin Route Access Only
+        Enterprise learning platform Security Protocol · Direct Admin Route Access Only
       </p>
     </div>
   )

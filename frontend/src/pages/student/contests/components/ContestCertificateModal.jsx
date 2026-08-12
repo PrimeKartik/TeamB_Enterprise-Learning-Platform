@@ -22,7 +22,7 @@ export default function ContestCertificateModal({ certificate, onClose }) {
             </div>
             <div>
               <h3 className="text-base font-bold text-white">Official Certificate of Achievement</h3>
-              <p className="text-xs text-purple-300/80">SkillSphere Competitive Programming Credentials · Verified Record</p>
+              <p className="text-xs text-purple-300/80">Enterprise learning platform Competitive Programming Credentials · Verified Record</p>
             </div>
           </div>
 
@@ -151,7 +151,7 @@ export default function ContestCertificateModal({ certificate, onClose }) {
                   <span style={{ color: '#6B21A8' }} className="font-serif italic font-extrabold text-sm block">Dr. Victoria Vance</span>
                 </div>
                 <p style={{ color: '#0F172A' }} className="font-bold text-[11px]">Dr. Victoria Vance</p>
-                <p style={{ color: '#64748B' }} className="text-[9px]">SkillSphere Academic Registrar</p>
+                <p style={{ color: '#64748B' }} className="text-[9px]">Enterprise learning platform Academic Registrar</p>
               </div>
 
             </div>

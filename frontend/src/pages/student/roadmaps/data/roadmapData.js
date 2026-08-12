@@ -69,7 +69,7 @@ export const CAREER_ROADMAPS_DATA = [
         ],
         videos: [{ title: "HTML5 Masterclass for Beginners", duration: "45 mins" }],
         readings: [{ title: "MDN Web Docs: HTML Elements Reference", type: "Official Docs" }],
-        codingPractice: [{ name: "Build a Structured Product Card", platform: "SkillSphere Practice", diff: "Easy" }],
+        codingPractice: [{ name: "Build a Structured Product Card", platform: "Enterprise learning platform Practice", diff: "Easy" }],
         assignments: [{ title: "Responsive Semantic Profile Page", duration: "3 Hours" }],
         quiz: { title: "Week 1 HTML & CSS Core Quiz", questionsCount: 15 }
       },
@@ -85,7 +85,7 @@ export const CAREER_ROADMAPS_DATA = [
         ],
         videos: [{ title: "Flexbox vs Grid Complete Guide", duration: "50 mins" }],
         readings: [{ title: "A Complete Guide to Flexbox (CSS-Tricks)", type: "Article" }],
-        codingPractice: [{ name: "Create a Responsive Dashboard Grid", platform: "SkillSphere Practice", diff: "Easy" }],
+        codingPractice: [{ name: "Create a Responsive Dashboard Grid", platform: "Enterprise learning platform Practice", diff: "Easy" }],
         assignments: [{ title: "Mini Project: Responsive Portfolio Website", duration: "5 Hours" }],
         quiz: { title: "Week 2 Flexbox & Grid Assessment", questionsCount: 15 }
       }
@@ -95,7 +95,7 @@ export const CAREER_ROADMAPS_DATA = [
     dailyTimetable: [
       { day: "Monday", hours: "2.5 Hours", topic: "HTML5 Semantics & Core Structure", goal: "Complete 2 Video Lessons & Quiz", status: "Completed" },
       { day: "Tuesday", hours: "2.5 Hours", topic: "CSS Flexbox & Responsive Layouts", goal: "Build Flexbox Navigation Bar", status: "Completed" },
-      { day: "Wednesday", hours: "3.0 Hours", topic: "JavaScript Syntax & Functions", goal: "Solve 5 SkillSphere JS Problems", status: "In Progress" },
+      { day: "Wednesday", hours: "3.0 Hours", topic: "JavaScript Syntax & Functions", goal: "Solve 5 Enterprise learning platform JS Problems", status: "In Progress" },
       { day: "Thursday", hours: "2.5 Hours", topic: "DOM Events & Event Listeners", goal: "Create Dynamic Counter & List App", status: "In Progress" },
       { day: "Friday", hours: "3.0 Hours", topic: "Mini Project Development", goal: "Build Portfolio Layout in Code", status: "Pending" },
       { day: "Saturday", hours: "2.0 Hours", topic: "Weekly Evaluation & Assessment", goal: "Attempt Week 3 MCQ Test", status: "Pending" },
@@ -184,8 +184,8 @@ export const CAREER_ROADMAPS_DATA = [
     // 9. Industry Certifications
     certifications: [
       { 
-        name: "SkillSphere Certified Full Stack Engineer", 
-        provider: "SkillSphere Nexus", 
+        name: "Enterprise learning platform Certified Full Stack Engineer", 
+        provider: "Enterprise learning platform Nexus", 
         progress: 85, 
         duration: "12 Weeks", 
         difficulty: "Intermediate", 
@@ -260,7 +260,7 @@ export const CAREER_ROADMAPS_DATA = [
       { category: "Official Documentation", items: [{ name: "MDN Web Docs", url: "https://developer.mozilla.org/" }, { name: "React.dev Official Manual", url: "https://react.dev/" }] },
       { category: "GitHub Repositories", items: [{ name: "clean-code-javascript", url: "https://github.com/ryanmcdermott/clean-code-javascript" }, { name: "developer-roadmap", url: "https://github.com/kamranahmedse/developer-roadmap" }] },
       { category: "YouTube Playlists", items: [{ name: "Traversy Media Web Dev", url: "https://youtube.com/traversymedia" }, { name: "Fireship 100 Seconds of Code", url: "https://youtube.com/fireship" }] },
-      { category: "Practice Platforms", items: [{ name: "SkillSphere Coding Arena", url: "/dashboard/coding-practice" }, { name: "LeetCode Problem Set", url: "https://leetcode.com/" }] }
+      { category: "Practice Platforms", items: [{ name: "Coding Arena", url: "/dashboard/coding-practice" }, { name: "LeetCode Problem Set", url: "https://leetcode.com/" }] }
     ]
   },
 
@@ -320,7 +320,7 @@ export const CAREER_ROADMAPS_DATA = [
         ],
         videos: [{ title: "Java 17 Core Crash Course", duration: "1 Hour 10 mins" }],
         readings: [{ title: "Oracle Java SE 17 Docs", type: "Official Docs" }],
-        codingPractice: [{ name: "Custom LinkedList Implementation", platform: "SkillSphere Practice", diff: "Medium" }],
+        codingPractice: [{ name: "Custom LinkedList Implementation", platform: "Enterprise learning platform Practice", diff: "Medium" }],
         assignments: [{ title: "Console Bank System", duration: "4 Hours" }],
         quiz: { title: "Week 1 Java Core Quiz", questionsCount: 20 }
       }
@@ -409,7 +409,7 @@ export const CAREER_ROADMAPS_DATA = [
         topics: [{ id: "fw1_1", name: "Semantic HTML5 Accessibility", completed: true }],
         videos: [{ title: "Tailwind CSS Course", duration: "1 Hour" }],
         readings: [{ title: "Tailwind Docs", type: "Docs" }],
-        codingPractice: [{ name: "Clone Stripe Hero", platform: "SkillSphere", diff: "Easy" }],
+        codingPractice: [{ name: "Clone Stripe Hero", platform: "Enterprise learning platform", diff: "Easy" }],
         assignments: [{ title: "Responsive Landing Page", duration: "4 Hours" }],
         quiz: { title: "Week 1 CSS Quiz", questionsCount: 15 }
       }

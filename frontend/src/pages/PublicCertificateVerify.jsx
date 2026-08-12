@@ -70,7 +70,7 @@ export default function PublicCertificateVerify() {
             </div>
             <div>
               <span className="text-lg font-black tracking-wider uppercase bg-gradient-to-r from-purple-400 via-pink-400 to-amber-300 bg-clip-text text-transparent block leading-tight">
-                SkillSphere
+                Enterprise learning platform
               </span>
               <span className="text-[9px] font-extrabold tracking-[3px] uppercase text-amber-400 block">
                 Learning Nexus
@@ -82,7 +82,7 @@ export default function PublicCertificateVerify() {
             to="/"
             className="flex items-center gap-1.5 text-xs text-purple-300 hover:text-white transition font-medium"
           >
-            <ArrowLeft size={14} /> Back to SkillSphere
+            <ArrowLeft size={14} /> Back to Enterprise learning platform
           </Link>
         </div>
 

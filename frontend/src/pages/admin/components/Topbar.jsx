@@ -5,7 +5,7 @@ import ThemeToggle from "../../../components/ThemeToggle";
 
 export default function Topbar({
   title = "Dashboard",
-  adminName = "SkillSphere Admin",
+  adminName = "Enterprise learning platform Admin",
 }) {
   const [search, setSearch] = useState("");
 
@@ -17,7 +17,7 @@ export default function Topbar({
           {title}
         </h1>
         <p className="text-muted text-xs mt-0.5">
-          SkillSphere System Control · Welcome back, <strong className="text-heading">{adminName}</strong>
+          Enterprise learning platform System Control · Welcome back, <strong className="text-heading">{adminName}</strong>
         </p>
       </div>
 

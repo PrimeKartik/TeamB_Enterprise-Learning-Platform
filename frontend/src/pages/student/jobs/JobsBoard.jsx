@@ -40,7 +40,7 @@ export default function JobsBoard() {
     const newApp = applyForJob(selectedJob.id, studentName, resumeData, user?.email || 'guest');
     setMyApplications([...myApplications, newApp]);
 
-    toast.success(`Successfully applied to ${selectedJob.company} using your SkillSphere Resume!`);
+    toast.success(`Successfully applied to ${selectedJob.company} using your Enterprise learning platform Resume!`);
     setHasApplied(true);
   };
 
@@ -159,7 +159,7 @@ export default function JobsBoard() {
                        ) : getApplicationStatus(selectedJob.id) === 'PENDING' ? (
                           <><Clock size={20} /> Application Under Review</>
                        ) : (
-                          <>Apply with SkillSphere Resume <ChevronRight size={20} /></>
+                          <>Apply with Enterprise learning platform Resume <ChevronRight size={20} /></>
                        )}
                     </button>
                  </div>

@@ -51,7 +51,7 @@ export default function AssessmentQuiz({ assessment, onClose, onComplete, onReta
         <div className="mb-6 flex items-center justify-between border-b border-soft pb-4">
           <div>
             <h2 className="text-lg font-bold text-heading">{assessment.title}</h2>
-            <p className="text-xs text-muted">SkillSphere Verified Evaluation</p>
+            <p className="text-xs text-muted">Enterprise learning platform Verified Evaluation</p>
           </div>
           <button onClick={onClose} className="rounded-xl p-2 text-muted hover:bg-soft hover:text-heading transition">
             <X size={20} />

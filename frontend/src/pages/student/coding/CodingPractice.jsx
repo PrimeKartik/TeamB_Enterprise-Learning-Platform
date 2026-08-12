@@ -88,7 +88,7 @@ function getCourseQuestionObject(locationState) {
     sampleInput: 'Sample input data',
     sampleOutput: 'Expected execution result',
     hintsJson: JSON.stringify(["Review the weekly lecture slides and MDN documentation.", "Test your code against edge case inputs."]),
-    tagsCsv: `${topic}, Course Practice, SkillSphere`,
+    tagsCsv: `${topic}, Course Practice, Enterprise learning platform`,
     xpReward: 100
   };
 }

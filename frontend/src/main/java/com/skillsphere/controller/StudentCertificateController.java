@@ -195,7 +195,7 @@ public class StudentCertificateController {
         String credId = cert != null ? cert.getCredentialId() : "SKILL-VERIFIED";
 
         String htmlContent = "<html><body style='font-family:Arial;text-align:center;padding:50px;'>"
-                + "<h1 style='color:#7c3aed;'>SkillSphere Learning Nexus</h1>"
+                + "<h1 style='color:#7c3aed;'>Enterprise learning platform</h1>"
                 + "<h2>Certificate of Completion</h2>"
                 + "<p>This certifies that <strong>" + studentName + "</strong></p>"
                 + "<p>has successfully completed 100% of the course</p>"

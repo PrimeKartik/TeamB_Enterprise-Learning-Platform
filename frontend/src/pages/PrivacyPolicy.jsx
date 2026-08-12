@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
       <h1 className="text-heading text-2xl font-bold mb-6">Privacy Policy</h1>
       <div className="space-y-5 text-body text-sm leading-relaxed">
         <p>
-          SkillSphere Learning Nexus collects only the information needed to run your
+          Enterprise learning platform collects only the information needed to run your
           account: your name, email address, and a securely hashed password (or your
           Google account email if you sign in with Google — we never see or store
           your Google password).
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
           </a>.
         </p>
         <p className="text-muted text-xs pt-4">
-          This is a sample policy included as part of the SkillSphere demo project —
+          This is a sample policy included as part of the Enterprise learning platform demo project —
           adapt it to your actual data practices before using in production.
         </p>
       </div>
@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
         <p>
           <span className="text-heading font-semibold">Certificates:</span> certificates
           are issued automatically upon completing all lessons in a course and reflect
-          your progress recorded on SkillSphere at the time of completion.
+          your progress recorded on Enterprise learning platform at the time of completion.
         </p>
         <p>
           <span className="text-heading font-semibold">Acceptable use:</span> accounts
@@ -53,11 +53,11 @@ export default function PrivacyPolicy() {
         </p>
         <p>
           <span className="text-heading font-semibold">Changes:</span> we may update
-          these terms from time to time. Continued use of SkillSphere after a change
+          these terms from time to time. Continued use of Enterprise learning platform after a change
           means you accept the updated terms.
         </p>
         <p className="text-muted text-xs pt-4">
-          This is a sample terms document included as part of the SkillSphere demo
+          This is a sample terms document included as part of the Enterprise learning platform demo
           project — adapt it to your actual policies before using in production.
         </p>
       </div>

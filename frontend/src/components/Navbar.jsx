@@ -79,7 +79,7 @@ export default function Navbar() {
             <GraduationCap size={20} className="text-white" />
           </div>
           <div className="leading-tight">
-            <p className="text-heading font-bold text-sm">SkillSphere</p>
+            <p className="text-heading font-bold text-sm">Enterprise learning platform</p>
             <p className="text-muted text-[10px]">Learning Nexus</p>
           </div>
         </Link>

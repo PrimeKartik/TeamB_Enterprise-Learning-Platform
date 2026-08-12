@@ -19,7 +19,7 @@ export default function RevenueReportTable({ reportData = [] }) {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `SkillSphere_Course_Revenue_Report_${Date.now()}.csv`;
+    a.download = `Enterprise learning platform_Course_Revenue_Report_${Date.now()}.csv`;
     a.click();
     toast.success('Revenue Report CSV downloaded');
   };

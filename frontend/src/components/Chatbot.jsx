@@ -378,7 +378,7 @@ export default function Chatbot() {
             <Sparkles size={18} color="#fff" />
           </div>
           <div>
-            <div style={styles.headerTitle}>SkillSphere AI</div>
+            <div style={styles.headerTitle}>Enterprise learning platform AI</div>
             <div style={styles.headerSub}>Your learning assistant</div>
           </div>
           <button
@@ -406,7 +406,7 @@ export default function Chatbot() {
                 <Bot size={26} color="#a855f7" />
               </div>
               <div style={{ fontWeight: 600, color: '#fff', marginBottom: 6, fontSize: 15 }}>
-                Hi! I'm SkillSphere AI 👋
+                Hi! I'm Enterprise learning platform AI 👋
               </div>
               Ask me anything about courses, learning tips, or how to navigate the platform.
             </div>

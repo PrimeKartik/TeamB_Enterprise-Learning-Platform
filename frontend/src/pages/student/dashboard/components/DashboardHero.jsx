@@ -25,7 +25,7 @@ export default function DashboardHero({
           <div className="flex flex-wrap items-center gap-3 mb-5">
             <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md rounded-full px-4 py-1.5 text-xs font-bold text-white border border-white/20">
               <Sparkles size={14} className="text-[#EC4899]" />
-              Welcome to SkillSphere Learning Nexus
+              Welcome to Enterprise learning platform
             </div>
 
             {/* Learning Streak Badge */}

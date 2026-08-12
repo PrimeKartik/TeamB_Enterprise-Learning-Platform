@@ -358,7 +358,7 @@ public class StudentCertificateController {
             Font labelFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 8, Color.DARK_GRAY);
 
             // Title Header
-            Paragraph brand = new Paragraph("SKILLSPHERE LEARNING NEXUS", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 12, goldColor));
+            Paragraph brand = new Paragraph("ENTERPRISE LEARNING PLATFORM", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 12, goldColor));
             brand.setAlignment(Element.ALIGN_CENTER);
             document.add(brand);
 
@@ -406,7 +406,7 @@ public class StudentCertificateController {
             document.add(table);
 
             // Signatures & Footer
-            Paragraph footer = new Paragraph("Verified via SkillSphere Learning Nexus | ID: " + cert.getCertificateId(), subtitleFont);
+            Paragraph footer = new Paragraph("Verified via Enterprise learning platform | ID: " + cert.getCertificateId(), subtitleFont);
             footer.setAlignment(Element.ALIGN_CENTER);
             document.add(footer);
 

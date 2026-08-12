@@ -21,7 +21,7 @@ export default function Hero() {
             <span className="gradient-text">Achieve More.</span>
           </h1>
           <p className="text-muted mt-5 max-w-md text-sm leading-relaxed">
-            SkillSphere Learning Nexus is your gateway to industry-relevant
+            Enterprise learning platform is your gateway to industry-relevant
             courses, expert guidance, and hands-on learning experience.
           </p>
 

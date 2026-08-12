@@ -11,7 +11,7 @@ export default function Footer() {
               <GraduationCap size={16} className="text-white" />
             </div>
             <div>
-              <p className="text-heading font-bold text-sm">SkillSphere</p>
+              <p className="text-heading font-bold text-sm">Enterprise learning platform</p>
               <p className="text-muted text-[10px]">Learning Nexus</p>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center text-muted text-[11px] py-4 border-t border-soft">
-        © {new Date().getFullYear()} SkillSphere Learning Nexus. All rights reserved.
+        © {new Date().getFullYear()} Enterprise learning platform. All rights reserved.
       </div>
     </footer>
   )
