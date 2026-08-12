@@ -3,7 +3,7 @@
 SkillSphere is a full-stack educational platform built with a **React (Vite + Tailwind)** frontend, a **Spring Boot** backend, and a **MySQL** database. It features secure JWT authentication, a comprehensive Student Dashboard, a powerful Admin Dashboard, and a dynamic Course Enrollment system.
 
 ## 🌐 Live Demo
-Check out the live application here: **[SkillSphere Live Demo](http://skill-sphere-wheat.vercel.app/)**
+Check out the live application here: **[ Live Demo](http://skill-sphere-wheat.vercel.app/)**
 
 ## 🚀 Features Overview
 
