@@ -1,11 +1,11 @@
 # Enterprise Learning Platform with Skill & Career Guidance System
 
-SkillSphere is a full-stack e-learning and career-guidance platform that takes a student all the way from **enrolling in a course** to **being job-ready** — course delivery, AI-assisted learning, skill assessment, verifiable certification, coding practice, contests, a role-based career roadmap, a resume builder, a jobs board, and a powerful admin back-office, all in one product.
+Enterprise Learning Platform with Skill & Career Guidance System is a full-stack e-learning and career-guidance platform that takes a student all the way from **enrolling in a course** to **being job-ready** — course delivery, AI-assisted learning, skill assessment, verifiable certification, coding practice, contests, a role-based career roadmap, a resume builder, a jobs board, and a powerful admin back-office, all in one product.
 
 Built with **React (Vite + Tailwind CSS)** on the frontend and **Spring Boot 3 + Spring Security + JPA/Hibernate** on the backend, backed by **MySQL**.
 
 ## 🌐 Live Demo
-**[SkillSphere Live Demo](http://skill-sphere-wheat.vercel.app/)**
+**[Enterprise Learning Platform with Skill & Career Guidance System Live Demo](http://skill-sphere-wheat.vercel.app/)**
 
 ---
 
@@ -66,7 +66,7 @@ Built with **React (Vite + Tailwind CSS)** on the frontend and **Spring Boot 3 +
 ## 🛠️ Tech Stack
 
 ```
-SkillSphere/
+Enterprise Learning Platform with Skill & Career Guidance System/
 ├── frontend/   React 18 + Vite + Tailwind CSS
 │               React Router · Recharts · Framer Motion · Axios
 │               jsPDF / html2canvas · qrcode.react · react-toastify
@@ -84,7 +84,7 @@ SkillSphere/
 
 ```
 ├── backend/
-│   └── src/main/java/com/skillsphere/
+│   └── src/main/java/com/Enterprise Learning Platform with Skill & Career Guidance System/
 │       ├── controller/    # 29 REST controllers (auth, courses, roadmap, contests, admin, ...)
 │       ├── model/         # JPA entities (User, Course, Certificate, Contest, CareerRoadmap, ...)
 │       ├── repository/    # Spring Data repositories
@@ -142,7 +142,7 @@ Runs on **http://localhost:5173** and proxies API calls to the backend on port 8
 
 **`backend/.env`**
 ```
-DB_URL=jdbc:mysql://localhost:3306/skillsphere_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+DB_URL=jdbc:mysql://localhost:3306/Enterprise Learning Platform with Skill & Career Guidance System_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
 DB_USERNAME=root
 DB_PASSWORD=your_local_password
 JWT_SECRET=change-this-to-a-long-random-secret-key-min-32-chars-please
