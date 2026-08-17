@@ -1,5 +1,4 @@
-# SkillSphere
-### Enterprise Learning Platform with Skill & Career Guidance System
+# Enterprise Learning Platform with Skill & Career Guidance System
 
 SkillSphere is a full-stack e-learning and career-guidance platform that takes a student all the way from **enrolling in a course** to **being job-ready** — course delivery, AI-assisted learning, skill assessment, verifiable certification, coding practice, contests, a role-based career roadmap, a resume builder, a jobs board, and a powerful admin back-office, all in one product.
 
